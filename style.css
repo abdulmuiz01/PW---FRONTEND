@@ -1,0 +1,147 @@
+html {
+    height: 100%;
+  }
+   
+  body {
+    background-image: url("homepageImg.jpg");
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    color: #f8f8f8;
+  }
+   
+  #mainText {
+    color: #ffffff;
+    width: 50%;
+  }
+   
+  .logo {
+    max-width: 50%;
+    height: auto;
+    margin-top: 0px;
+    text-decoration: none;
+  }
+   
+  header {
+    background: rgb(27, 58, 87);
+    background: linear-gradient(
+      90deg,
+      rgba(27, 58, 87, 1) 0%,
+      rgba(0, 198, 200, 1) 51%,
+      rgba(0, 198, 200, 1) 69%
+    );
+   
+    height: 80px;
+  }
+   
+  #containerNavbar {
+    padding: 0;
+    margin: 60px;
+  }
+   
+  #navbarButtons {
+    margin-right: 0px;
+  }
+   
+  .navbarNav {
+    margin-left: 120px;
+  }
+   
+  .nav-item {
+    margin-bottom: 0px;
+  }
+   
+  /* === HEADING STYLE #3 === */
+  .three h1 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 25px;
+    position: relative;
+    margin-top: 20%;
+  }
+  .three h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #111;
+  }
+  .three h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    height: 5px;
+    width: 95%;
+    max-width: 255px;
+    background-color: #000000;
+  }
+   
+  #bottoneNav {
+    margin-left: 100px;
+    font-size: 20px;
+    background-image: linear-gradient(to right, white, white 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+   
+  #bottoneNav::before {
+    content: "";
+    background: rgb(27, 58, 87);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+   
+  #bottoneNav:hover {
+    background-position: 0;
+  }
+   
+  #bottoneNav:hover::before {
+    width: 100%;
+  }
+   
+  #testoMain {
+    margin-top: 100%;
+  }
+   
+  #mainText {
+    margin-left: 10%;
+    font-size: 20px;
+  }
+   
+  @media (max-width: 480px) {
+    /* mobile */
+    body {
+      font-size: 14px;
+    }
+  }
+   
+  @media (max-width: 768px) {
+    /* tablet */
+    body {
+      font-size: 15px;
+    }
+  }
+   
+  @media (min-width: 769px) {
+    /* pc */
+    body {
+      font-size: 16px;
+    }
+  }
