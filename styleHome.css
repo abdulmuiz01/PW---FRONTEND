@@ -1,19 +1,21 @@
 html {
   height: 100%;
 }
- 
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
- 
+
 .logo {
   width: 40%;
   height: auto;
   margin-top: 0px;
   text-decoration: none;
 }
- 
+
+/* === HEADER  === */
+
 header {
   background: rgb(27, 58, 87);
   background: linear-gradient(
@@ -22,30 +24,30 @@ header {
     rgba(0, 198, 200, 1) 51%,
     rgba(0, 198, 200, 1) 69%
   );
- 
+
   height: 60px;
 }
- 
+
 #containerNavbar {
   padding: 0;
   margin: 60px;
 }
- 
+
 #navbarButtons {
   margin-right: 0px;
 }
- 
+
 .navbarNav {
   margin-left: 120px;
 }
- 
+
 .nav-item {
   margin-bottom: 0px;
 }
- 
-/* === BUTTONS  === */
- 
-#bottoneNav {
+
+/* === HEADER BUTTONS  === */
+
+.bottoneNav {
   margin-left: 100px;
   font-size: 16px;
   background-image: linear-gradient(to right, white, white 50%, #000 50%);
@@ -55,11 +57,12 @@ header {
   padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.2s ease-in-out;
 }
- 
-#bottoneNav::before {
+
+.bottoneNav::before {
   content: "";
   background: rgb(27, 58, 87);
   display: block;
@@ -70,21 +73,21 @@ header {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
- 
-#bottoneNav:hover {
+
+.bottoneNav:hover {
   background-position: 0;
 }
- 
-#bottoneNav:hover::before {
+
+.bottoneNav:hover::before {
   width: 100%;
 }
- 
+
 #testoMain {
   margin-top: 100%;
 }
- 
+
 /* === DIV STYLE  === */
- 
+
 .demo-wrap1 {
   overflow: hidden;
   position: relative;
@@ -93,7 +96,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
- 
+
 .demo-bg1 {
   position: absolute;
   left: 0;
@@ -101,18 +104,18 @@ header {
   width: 100%;
   filter: brightness(60%);
 }
- 
+
 .demo-content1 {
   position: relative;
   margin-top: 10%;
 }
- 
+
 .effect-div1 {
   --g: 4px; /* the gap */
   --b: 5px; /* border thickness*/
   --c: rgb(255, 255, 255);
   --font-size: 10px;
- 
+
   padding: calc(var(--g) + var(--b));
   --_c: #0000 0 25%, var(--c) 0 50%;
   --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
@@ -126,50 +129,50 @@ header {
   transition: 0.25s;
   font-size: var(--font-size);
 }
- 
+
 .effect-div1:hover {
   --_p: 75%;
   filter: grayscale(0%);
   --c: rgb(58, 211, 238);
   transition: 1s;
 }
- 
+
 .effect-div1:hover .mainTitle1 {
   color: rgb(58, 211, 238); /* Cambia il colore del testo durante l'hover */
   transition: 0.25s;
 }
- 
+
 /* === TEXT STYLE1 === */
- 
+
 #mainText1 {
   color: #ffffff;
   width: 50%;
   font-size: 20px;
   margin-top: 15%;
   width: 1000px;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .col {
   margin: 20px;
 }
- 
+
 .mainTitle1 {
   margin: 25px;
 }
- 
+
 /* ===  DIVSTYLE2  === */
- 
+
 .demo-wrap2 {
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
 }
- 
+
 .demo-bg2 {
   opacity: 0.6;
   position: absolute;
@@ -177,17 +180,17 @@ header {
   top: 0;
   width: 100%;
 }
- 
+
 .demo-content2 {
   position: relative;
 }
- 
+
 .effect-div2 {
   --g: 4px; /* the gap */
   --b: 5px; /* border thickness*/
   --c: rgb(47, 95, 140);
   --font-size: 10px;
- 
+
   padding: calc(var(--g) + var(--b));
   --_c: #0000 0 25%, var(--c) 0 50%;
   --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
@@ -201,21 +204,21 @@ header {
   transition: 0.25s;
   font-size: var(--font-size);
 }
- 
+
 .effect-div2:hover {
   --_p: 75%;
   filter: grayscale(0%);
   --c: rgb(58, 211, 238);
   transition: 1s;
 }
- 
+
 .effect-div2:hover .mainTitle2 {
   color: rgb(58, 211, 238); /* Cambia il colore del testo durante l'hover */
   transition: 0.25s;
 }
- 
+
 /* === TEXT STYLE2 === */
- 
+
 #mainText2 {
   color: #000000;
   width: 50%;
@@ -224,44 +227,46 @@ header {
   width: 1100px;
   margin-top: 100px;
   margin-bottom: 100px;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .col {
   margin: 20px;
 }
- 
+
 .mainTitle2 {
   margin-top: 70px;
 }
- 
+
 /* ===  CAROUSEL  === */
+
 .carouselMain {
   display: flex;
   justify-content: flex-start; /* Allinea il contenitore a sinistra */
+  margin-right: 100px;
 }
- 
+
 .carousel-container {
   display: flex;
 }
- 
+
 .carousel-container .carousel {
   flex: 1;
 }
- 
+
 .demo-wrapCar {
   margin-left: 20px; /* Aggiunge uno spazio tra il carousel e il testo */
 }
- 
+
 .effect-divCar {
   --g: 4px; /* the gap */
   --b: 5px; /* border thickness*/
   --c: rgb(47, 95, 140);
   --font-size: 10px;
- 
+
   padding: calc(var(--g) + var(--b));
   --_c: #0000 0 25%, var(--c) 0 50%;
   --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
@@ -275,21 +280,21 @@ header {
   transition: 0.25s;
   font-size: var(--font-size);
 }
- 
+
 .effect-divCar:hover {
   --_p: 75%;
   filter: grayscale(0%);
   --c: rgb(58, 211, 238);
   transition: 1s;
 }
- 
+
 .effect-divCar:hover .mainTitleCar {
   color: rgb(58, 211, 238); /* Cambia il colore del testo durante l'hover */
   transition: 0.25s;
 }
- 
+
 /* === CAROUSEL TEXT === */
- 
+
 #mainTextCar {
   color: #000000;
   width: 50%;
@@ -299,25 +304,29 @@ header {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 100px;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .mainTitleCar {
   margin-top: 25px;
 }
- 
+
+.carText{
+  width: 700px;
+}
+
 /* ===  DIVSTYLE3  === */
- 
+
 .demo-wrap3 {
   overflow: hidden;
   position: relative;
   height: 100vh;
   margin-top: 100px;
 }
- 
+
 .demo-bg3 {
   filter: brightness(50%);
   position: absolute;
@@ -325,20 +334,20 @@ header {
   top: 0;
   width: 100%;
 }
- 
+
 .demo-content3 {
   position: relative;
   margin-top: 10%;
   margin-left: 30%;
   height: 400px;
 }
- 
+
 .effect-div3 {
   --g: 4px; /* the gap */
   --b: 5px; /* border thickness*/
   --c: rgb(255, 255, 255);
   --font-size: 10px;
- 
+
   padding: calc(var(--g) + var(--b));
   --_c: #0000 0 25%, var(--c) 0 50%;
   --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
@@ -352,21 +361,23 @@ header {
   transition: 0.25s;
   font-size: var(--font-size);
 }
- 
+
 .effect-div3:hover {
   --_p: 75%;
   filter: grayscale(0%);
   --c: rgb(58, 211, 238);
   transition: 1s;
 }
- 
+
 .effect-div3:hover .mainTitle3 {
   color: rgb(58, 211, 238); /* Cambia il colore del testo durante l'hover */
   transition: 0.25s;
 }
- 
+
+
+
 /* === TEXT STYLE3 === */
- 
+
 #mainText3 {
   color: #ffffff;
   width: 50%;
@@ -375,37 +386,28 @@ header {
   height: 350px;
   width: 1000px;
   margin-top: 20%;
- 
+
   display: flex;
   flex-direction: column;
 }
- 
+
 .col {
   margin: 20px;
 }
- 
+
 .mainTitle3 {
   margin: 25px;
 }
- 
-/* === BUTTONS  === */
- 
+
 /* ===  RESPONSIVE  === */
- 
-@media (max-width: 480px) {
-  /* mobile */
-  body {
-    font-size: 14px;
-  }
-}
- 
+
 @media (max-width: 768px) {
   /* tablet */
   body {
     font-size: 15px;
   }
 }
- 
+
 @media (min-width: 769px) {
   /* pc */
   body {

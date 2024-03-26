@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azienda HR</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
+    >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styleLettera.css" />
+    <link rel="stylesheet" href="styleLettera.css" >
 
     <script>
       function inviaLettera() {
@@ -29,14 +29,13 @@
         }
       }
     </script>
-    
   </head>
   <body>
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
       <div id="containerNavbar" class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img class="logo" src="immagini/logoText.png" alt="Logo Azienda" />
+          <img class="logo" src="immagini/logoText.png" alt="Logo Azienda">
         </a>
         <button
           class="navbar-toggler"
@@ -52,11 +51,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul id="navbarButtons" class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a id="bottoneNav" data-replace="Home" href="index.html">Home</a>
+              <a class="bottoneNav" data-replace="Home" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a
-                id="bottoneNav"
+                class="bottoneNav"
                 data-replace="Invia Lettera di Richiamo"
                 href="lettera.html"
                 >Invia Lettera di Richiamo</a
@@ -64,9 +63,9 @@
             </li>
             <li class="nav-item">
               <a
-                id="bottoneNav"
+                class="bottoneNav"
                 data-replace="Dipendenti"
-                href="dipendenti.html"
+                href="dipendenti.html?dipendenti=all"
                 >Dipendenti</a
               >
             </li>
@@ -76,76 +75,81 @@
     </header>
 
     <!-- Main content -->
-    
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <!-- Form for sending warning letter -->
-        <div class="jumbotron">
-          <form onsubmit="event.preventDefault(); inviaLettera();">
-            <div id="containerForm"  class="mb-3">
-                <div class="container mt-5">
-                  <h1 class="text-center">
-                    <div class="demo-wrap1">
-                      <div class="demo-content1">
-                        <div id="mainText1" class="effect-div1">
-                          <div>
-                            <h1 class="mainTitle1">Invia una Lettera di Richiamo</h1>
-                          </div>
+    <div class="container-fluid">
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <!-- Form for sending warning letter -->
+          <div class="jumbotron">
+            <form onsubmit="event.preventDefault(); inviaLettera();">
+              <div id="containerForm" class="mb-3">
+                <h1 class="text-center">
+                  <div class="demo-wrap1">
+                    <div class="demo-content1">
+                      <div id="mainText1" class="effect-div1">
+                        <div>
+                          <h1 class="mainTitle1">
+                            Invia una Lettera di Richiamo
+                          </h1>
                         </div>
                       </div>
-                    </h1>
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" required />
-              
-              <div class="mb-3">
-                <label for="cognome" class="form-label">Cognome</label>
-                <input type="text" class="form-control" id="cognome" required />
+                    </div>
+                  </div>
+                </h1>
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" required >
+                </div>
+                <div class="mb-3">
+                  <label for="cognome" class="form-label">Cognome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cognome"
+                    required
+                  >
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    required
+                  >
+                </div>
+                <div class="mb-3">
+                  <label for="note" class="form-label">Note</label>
+                  <textarea class="form-control" id="note" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Invia Lettera di Richiamo
+                </button>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="note" class="form-label">Note</label>
-                <textarea class="form-control" id="note" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Invia Lettera di Richiamo
-              </button>
             </form>
           </div>
         </div>
-          <!-- End of form -->
-        </div>
-      </div>
-      <!-- Image container -->
-      <div class="col-md-6">
-        <div class="image-container">
-          <img src="immagini/Pennello.png"/>
+        <!-- End of form -->
+        <!-- Image container -->
+        <div class="col-md-6">
+          <div class="image-container">
+            <img alt="lettera" class="imgLettera" src="immagini/lettera.jpeg" >
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-     <!-- Footer -->
-  <div- class="footer">
-    <footer class="bg-dark text-light py-3">
-      <div class="container text-center">
-        <p>&copy; 2024 ITSolutions. Tutti i diritti riservati.</p>
-        <p>
-          Indirizzo Azienda | Telefono: 123-456-7890 | Email: info@ITSolutions
-          .com
-        </p>
-      </div>
-    </footer>
-    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+          <p>&copy; 2024 ITSolutions. Tutti i diritti riservati.</p>
+          <p>
+            Indirizzo Azienda | Telefono: 123-456-7890 | Email: info@ITSolutions
+            .com
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
-
 </html>

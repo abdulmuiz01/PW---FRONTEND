@@ -1,0 +1,161 @@
+/* === HEADER  === */
+
+header {
+    background: rgb(27, 58, 87);
+    background: linear-gradient(
+      90deg,
+      rgba(27, 58, 87, 1) 0%,
+      rgba(0, 198, 200, 1) 51%,
+      rgba(0, 198, 200, 1) 69%
+    );
+  
+    height: 60px;
+  }
+  
+  #containerNavbar {
+    padding: 0;
+    margin: 60px;
+  }
+  
+  .navbarNav {
+    margin-left: 120px;
+  }
+  
+  .nav-item {
+    margin-bottom: 0px;
+  }
+  
+  /* === HEADER BUTTONS  === */
+  
+  #navbarButtons {
+    margin-right: 0px;
+  }
+  
+  .bottoneNav {
+    margin-left: 100px;
+    font-size: 16px;
+    background-image: linear-gradient(to right, white, white 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .bottoneNav::before {
+    content: "";
+    background: rgb(27, 58, 87);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bottoneNav:hover {
+    background-position: 0;
+  }
+  
+  .bottoneNav:hover::before {
+    width: 100%;
+  }
+  
+  /* === FILTER BUTTONS  === */
+  
+  .bigContainer {
+    min-height: 82.9vh; /* Imposta l'altezza minima della bigContainer a 100% dell'altezza della finestra del browser */
+    overflow-y: auto; /* Abilita lo scrolling verticale quando il contenuto supera l'altezza della finestra del browser */
+  }
+  .divButtons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filterButtons {
+    margin: 90px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    background-image: linear-gradient(
+      to right,
+      rgb(42, 206, 217),
+      rgb(42, 206, 217),
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .filterButtons::before {
+    content: "";
+    background: rgb(55, 134, 208);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .filterButtons:hover {
+    background-position: 0;
+  }
+  
+  .filterButtons:hover::before {
+    width: 100%;
+  }
+  
+  .containerTab {
+    display: flex;
+    justify-content: center;
+    max-height: 500px; /* Imposta l'altezza massima per il corpo della tabella */
+    overflow-y: auto;
+    width: 1500px;
+    margin-left: 180px;
+  }
+  
+  .tabella {
+    width: 1500px;
+    margin-bottom: 100px;
+  }
+  
+  thead {
+    position: sticky;
+    top: 0;
+    background: rgb(27, 58, 87);
+    z-index: 1;
+  }
+  
+  tbody td {
+    font-size: 14px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    color: #000000;
+  }
+  
+  th {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  

@@ -1,0 +1,154 @@
+[
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "ABCD12345",
+    "nome": "Mario",
+    "cognome": "Rossi",
+    "dataAssunzione": "03/05/1995",
+    "nomeRiferimento": "VWX852147963"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "EFGH67890",
+    "nome": "Giulia",
+    "cognome": "Verdi",
+    "dataAssunzione": "10/12/2000",
+    "nomeRiferimento": "GHIJ70315"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "IJKL13579",
+    "nome": "Luca",
+    "cognome": "Bianchi",
+    "dataAssunzione": "15/09/2007",
+    "nomeRiferimento": "GHIJ70315"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "MNOP24680",
+    "nome": "Anna",
+    "cognome": "Russo",
+    "dataAssunzione": "20/06/2010",
+    "nomeRiferimento": "VWX852147963"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "QRST35791",
+    "nome": "Paola",
+    "cognome": "Gialli",
+    "dataAssunzione": "25/03/2015",
+    "nomeRiferimento": "GHIJ70315"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "UVWX46923",
+    "nome": "Giovanni",
+    "cognome": "Verdi",
+    "dataAssunzione": "30/11/2019",
+    "nomeRiferimento": "VWX852147963"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "ABC123456789",
+    "nome": "Mario",
+    "cognome": "Rossi",
+    "dataAssunzione": "05/09/2005",
+    "nomeRiferimento": "LMNO82460"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "DEF987654321",
+    "nome": "Anna",
+    "cognome": "Verdi",
+    "dataAssunzione": "12/02/2010",
+    "nomeRiferimento": "LMNO82460"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "GHI246813579",
+    "nome": "Luca",
+    "cognome": "Bianchi",
+    "dataAssunzione": "03/11/2018",
+    "nomeRiferimento": "PQRS94627"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "JKL369258147",
+    "nome": "Giovanna",
+    "cognome": "Rossini",
+    "dataAssunzione": "20/07/2014",
+    "nomeRiferimento": "PQRS94627"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "MNO159357486",
+    "nome": "Marco",
+    "cognome": "Gialli",
+    "dataAssunzione": "15/04/2000",
+    "nomeRiferimento": "PQRS94627"
+  },
+  {
+    "categoria": "tecnico",
+    "codiceFiscale": "PQR753159246",
+    "nome": "Carla",
+    "cognome": "Neri",
+    "dataAssunzione": "22/10/2012",
+    "nomeRiferimento": "PQRS94627"
+  },
+  {
+    "categoria": "manager",
+    "codiceFiscale": "VWX852147963",
+    "nome": "Elena",
+    "cognome": "Bianchi",
+    "dataAssunzione": "10/12/2015",
+    "nomeRiferimento": "XYZA17890"
+  },
+  {
+    "categoria": "manager",
+    "codiceFiscale": "GHIJ70315",
+    "nome": "Federico",
+    "cognome": "Russo",
+    "dataAssunzione": "23/04/2014",
+    "nomeRiferimento": "BCDE29013"
+  },
+  {
+    "categoria": "manager",
+    "codiceFiscale": "LMNO82460",
+    "nome": "Elisa",
+    "cognome": "Verdi",
+    "dataAssunzione": "29/01/2018",
+    "nomeRiferimento": "BCDE29013"
+  },
+  {
+    "categoria": "manager",
+    "codiceFiscale": "PQRS94627",
+    "nome": "Elena",
+    "cognome": "Gialli",
+    "dataAssunzione": "03/08/2016",
+    "nomeRiferimento": "BCDE29013"
+  },
+  {
+    "categoria": "manager",
+    "codiceFiscale": "TUVW06739",
+    "nome": "Roberto",
+    "cognome": "Verdi",
+    "dataAssunzione": "09/05/2011",
+    "nomeRiferimento": "XYZA17890"
+  },
+  {
+    "categoria": "dirigente",
+    "codiceFiscale": "XYZA17890",
+    "nome": "Andrea",
+    "cognome": "Rossi",
+    "dataAssunzione": "05/02/2008",
+    "nomeRiferimento": "Amministrazione"
+  },
+  {
+    "categoria": "dirigente",
+    "codiceFiscale": "BCDE29013",
+    "nome": "Paolo",
+    "cognome": "Neri",
+    "dataAssunzione": "11/11/2015",
+    "nomeRiferimento": "Sviluppo"
+  }
+]

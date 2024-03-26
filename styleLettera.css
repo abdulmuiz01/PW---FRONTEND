@@ -41,7 +41,7 @@ header {
 
 /* === BUTTONS  === */
 
-#bottoneNav {
+.bottoneNav {
   margin-left: 100px;
   font-size: 16px;
   background-image: linear-gradient(to right, white, white 50%, #000 50%);
@@ -51,11 +51,13 @@ header {
   padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
+  background-clip: text;
+
   -webkit-text-fill-color: transparent;
   transition: all 0.2s ease-in-out;
 }
 
-#bottoneNav::before {
+.bottoneNav::before {
   content: "";
   background: rgb(27, 58, 87);
   display: block;
@@ -67,11 +69,11 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-#bottoneNav:hover {
+.bottoneNav:hover {
   background-position: 0;
 }
 
-#bottoneNav:hover::before {
+.bottoneNav:hover::before {
   width: 100%;
 }
 
@@ -81,6 +83,7 @@ header {
   overflow: hidden;
   position: relative;
   margin-bottom: 60px;
+  margin-top: 100px;
 }
 
 .demo-bg1 {
@@ -106,7 +109,7 @@ header {
   --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
   background: var(--_g1) var(--_p, 175%) 0, var(--_g2) 0 var(--_p, 175%),
     var(--_g1) var(--_p, 175%) 100%, var(--_g2) 100% var(--_p, 175%); /* var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
-        var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);*/
+      var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);*/
   background-size: 200% var(--b), var(--b) 200%;
   cursor: auto;
   filter: grayscale(50%);
@@ -150,14 +153,19 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 300px;
+  padding-bottom: 26px;
+  margin-left: 100px;
 }
 
 /* === IMAGE === */
 
 .image-container {
-  margin-left: 300px;
+  margin-left: 100px;
   margin-bottom: 100px;
   margin-top: 200px;
-  padding-bottom: 65px;
+  padding-bottom: 40px;
+}
+
+.imgLettera {
+  width: 600px;
 }
