@@ -31,48 +31,51 @@
     </script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
-      <div id="containerNavbar" class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img class="logo" src="immagini/logoText.png" alt="Logo Azienda">
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul id="navbarButtons" class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="bottoneNav" data-replace="Home" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="bottoneNav"
-                data-replace="Invia Lettera di Richiamo"
-                href="lettera.html"
-                >Invia Lettera di Richiamo</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="bottoneNav"
-                data-replace="Dipendenti"
-                href="dipendenti.html?dipendenti=all"
-                >Dipendenti</a
-              >
-            </li>
-          </ul>
-        </div>
+   <!-- Header -->
+   <header class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
+    <div id="containerNavbar" class="container-fluid">
+      <a id="navbar-logo" class="navbar-brand" href="index.html">
+        <img class="logo" src="immagini/logoText.png" alt="Logo Azienda" >
+      </a>
+      <button
+      id="bottoneTendina"
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span id="logoTendina" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul id="navbarButtons" class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="bottoneNav" data-replace="Home" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="bottoneNav"
+              data-replace="Invia Lettera di Richiamo"
+              href="lettera.html"
+              >Invia Lettera di Richiamo</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="bottoneNav"
+              data-replace="Dipendenti"
+              href="dipendenti.html?dipendenti=all"
+              >Dipendenti</a
+            >
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- Main content -->
     <div class="container-fluid">
@@ -151,5 +154,23 @@
         </div>
       </footer>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Ottieni il menu espandibile
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+      
+        // Aggiungi un event listener per il clic al documento
+        document.addEventListener('click', function(event) {
+          // Controlla se il clic è avvenuto all'interno del menu espandibile o del bottone di navigazione
+          var isClickInsideNavbar = navbarCollapse.contains(event.target);
+          var isClickOnNavbarButton = event.target.getAttribute('data-bs-toggle') === 'collapse';
+      
+          // Se il clic non è avvenuto all'interno del menu espandibile e non è stato fatto sul bottone di navigazione, chiudi il menu
+          if (!isClickInsideNavbar && !isClickOnNavbarButton) {
+            navbarCollapse.classList.remove('show'); // Rimuovi la classe 'show' per chiudere il menu
+          }
+        });
+      });
+      </script>
   </body>
 </html>

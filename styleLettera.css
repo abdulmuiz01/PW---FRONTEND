@@ -188,62 +188,134 @@ header {
     margin-left: 50px;
     font-size: 14px;
   }
-
- 
-  .demo-wrap1{
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .demo-content1{
-    display: flex;
-    justify-content: center;
-  }
-
-  .effect-div1{
-    --b:3px;
-    display: flex;
-    justify-content: center;
- 
-  }
-
-  .carousel-container{
-    display: block;
-  }
-
-  .demo-wrapCar{
-    margin:0%;
-    height:fit-content;
-    margin-top: 130px;
-    display: flex;
-    justify-content: center;
-  
-
-  }
-
-  .mainTitle1 {
-    font-size: 20px;
-    padding: 0;
-    margin-bottom: 0;
-    margin-top: 20px;
-  }
-
-  /* riduci la dimensione del testo*/
-  #mainText1 {
-  font-size: 15px;
-  height: 80px; /* Modifica l'altezza in auto */
-  width: 100%;
-
-
-  }
-.container-fluid{
-  min-height: 1170px;
 }
-  .imgLettera{
-    width: 300px;
-   }
-  }
+  @media (max-width: 576px) {
+    /* Dispositivi mobili */
+  
+    
+    /* Riduci ulteriormente il margine del container del navbar */
+    #containerNavbar {
+      margin: 5px;
+      height: 50px; 
+    }
+  
+    #navbar-logo{
+      width: 100px;
+      margin-bottom: 15px;
+    }
 
+    /* Riduci ulteriormente la dimensione del logo */
+    .logo {
+      width: 100%;
+    }
+  
+    #bottoneTendina{
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+  
+    }
+  
+    #logoTendina{
+      width: 15px;
+      
+    }
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white; /* Sfondo bianco */
+      padding: 2rem;
+      width: 70%; /* Larghezza del menu */
+      z-index: 1000;
+      overflow-y: auto; /* Aggiungi scorrimento verticale se necessario */
+      transform: translateX(100%); /* Inizialmente nascosto fuori dallo schermo */
+      transition: transform 0.3s ease-in-out; /* Aggiungi un'animazione al menu */
+    }
+  
+    /* Mostra il menu quando è aperto */
+    .navbar-collapse.show {
+      transform: translateX(0); /* Sposta il menu dentro lo schermo */
+    }
+  
+    /* Aggiusta lo stile dei link nel menu */
+    .navbar-collapse a {
+      color: black; /* Colore del testo */
+      font-size: 1.2rem; /* Dimensione del testo */
+      display: block;
+      margin-bottom: 1rem; /* Spazio tra i link */
+    }
+  
+  
+    /* Riduci ulteriormente la dimensione del testo del bottone nella navbar */
+    .bottoneNav {
+      margin-left: 30px;
+      font-size: 12px;
+    }
+  
+    #imgBg{
+      height: 300px;
+    } 
+  
+    .demo-wrap1{
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+    .demo-content1{
+      display: flex;
+      justify-content: center;
+
+    }
+  
+   
+    .effect-div1{
+      --b:1px;
+      display: flex;
+      justify-content: center;
+   
+    }
+  
+    /* Riduci la dimensione dei titoli principale */
+    .mainTitle1 {
+      font-size: 25px;
+      padding: 0;
+      margin-top: 15px;
+
+    }
+
+    .jumbotron{
+      margin: 0;
+      margin-bottom: 100px;
+    }
+    
+    .image-container{
+      display: none;
+    }
+ 
+    /* riduci la dimensione del testo*/
+    #mainText1 {
+    font-size: 12px;
+    height: 100px;  
+    }
+  
+  
+  
+    /* Riduci la larghezza del testo principale nei contenitori principali */
+    #mainText1{
+      width: 80%;
+    }
+  
+    #mainText1{
+      margin: 0;
+    }
+
+  }
+  
+  
+  
 
 
 

@@ -521,18 +521,66 @@ header {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   /* Dispositivi mobili */
 
-  /* Riduci ulteriormente la dimensione del logo */
-  .logo {
-    width: 20%;
-  }
-
+  
   /* Riduci ulteriormente il margine del container del navbar */
   #containerNavbar {
     margin: 5px;
+    height: 50px; 
+    
   }
+
+  #navbar-logo{
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  /* Riduci ulteriormente la dimensione del logo */
+  .logo {
+    width: 100%;
+  }
+
+  #bottoneTendina{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+  }
+
+  #logoTendina{
+    width: 15px;
+    
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white; /* Sfondo bianco */
+    padding: 2rem;
+    width: 70%; /* Larghezza del menu */
+    z-index: 1000;
+    overflow-y: auto; /* Aggiungi scorrimento verticale se necessario */
+    transform: translateX(100%); /* Inizialmente nascosto fuori dallo schermo */
+    transition: transform 0.3s ease-in-out; /* Aggiungi un'animazione al menu */
+  }
+
+  /* Mostra il menu quando è aperto */
+  .navbar-collapse.show {
+    transform: translateX(0); /* Sposta il menu dentro lo schermo */
+  }
+
+  /* Aggiusta lo stile dei link nel menu */
+  .navbar-collapse a {
+    color: black; /* Colore del testo */
+    font-size: 1.2rem; /* Dimensione del testo */
+    display: block;
+    margin-bottom: 1rem; /* Spazio tra i link */
+  }
+
 
   /* Riduci ulteriormente la dimensione del testo del bottone nella navbar */
   .bottoneNav {
@@ -540,51 +588,141 @@ header {
     font-size: 12px;
   }
 
-  /* Riduci ulteriormente la dimensione del testo principale */
+  #imgBg{
+    height: 300px;
+  } 
+
+  .demo-wrap1{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .demo-content1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .demo-wrap2{
+    height: 400px;
+  }
+
+
+  .demo-content2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .effect-div1,
+  .effect-div2,
+  .effect-div3,
+  .effect-divCar{
+    --b:1px;
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+  .carousel-container{
+    display: block;
+  }
+
+  .demo-wrapCar{
+    margin:0%;
+    height:fit-content;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+  
+
+  }
+
+  .demo-contentCar{
+    display: flex;
+    justify-content: center; 
+    height: fit-content;
+  }
+
+
+  #mainTextCar{
+    margin: 0 ;   
+  }
+
+  /* Riduci la dimensione dei titoli principale */
   .mainTitle1,
   .mainTitle2,
-  .mainTitle3,
   .mainTitleCar {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 0;
   }
-
-  /* Riduci ulteriormente il margine superiore del testo principale */
+  
+  .mainTitle3{
+    font-size: 15px;
+    margin: 0;
+  }
+  /* riduci la dimensione del testo*/
   #mainText1,
-  #mainText2,
-  #mainText3,
   #mainTextCar {
-    margin-top: 5%;
+  
+    font-size: 12px;
+  height: auto; /* Modifica l'altezza in auto */
+
   }
 
-  /* Riduci ulteriormente il margine delle colonne */
-  .col {
-    margin: 5px;
-  }
 
-  /* Riduci ulteriormente la larghezza dei contenitori principali */
-  .demo-wrap1,
-  .demo-wrap2,
-  .demo-wrap3 {
-    margin-top: 20px;
-  }
 
-  /* Riduci ulteriormente la dimensione delle immagini di sfondo */
-  .demo-bg1,
-  .demo-bg2,
-  .demo-bg3 {
-    height: 150px;
-  }
-
-  /* Riduci ulteriormente la larghezza del testo principale nei contenitori principali */
+  /* Riduci la larghezza del testo principale nei contenitori principali */
   #mainText1,
-  #mainText2,
-  #mainText3 {
-    width: 90%;
-  }
-
-  /* Riduci ulteriormente la larghezza del testo principale nel carousel */
-  #mainTextCar {
+  #mainText2 {
     width: 80%;
+  }
+
+  #mainText1{
+    margin: 0;
+  }
+
+  #mainText2{
+    font-size: 12px;
+    height: 250px;
+  }
+
+  #mainText3{
+    width: 350px;
+    margin-top: 0;
+    font-size: 12px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    
+
+  }
+  
+  #col3{
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  /* Riduci la larghezza del testo principale nel carousel */
+  #mainTextCar {
+    width: 70%;
+  }
+
+  .demo-wrap3 {
+    height: max-content;
+    margin-top: 100px;
+  }
+  
+  .demo-bg3 {
+    filter: brightness(50%);
+    position: absolute;
+    width: 100%;
+    
+  }
+  
+  .demo-content3 {
+    position: relative;
+    height: 300px;
+    margin-left: 0;  
   }
 }
 
