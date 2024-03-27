@@ -15,7 +15,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="styleHome.css" >
     <link
       rel="stylesheet"
@@ -72,8 +71,8 @@
     <!-- MAIN -->
 
     <div class="demo-wrap1">
-      <img class="demo-bg1" src="immagini/homepageImg1.jpg" alt="">
       <div class="demo-content1">
+      <img class="demo-bg1" id="imgBg"  src="immagini/homepageImg1.jpg" alt="">
         <!-- main -->
         <div id="mainText1" class="effect-div1">
           <div>
@@ -120,7 +119,7 @@
     <div class="carouselMain">
       <div class="carousel-container">
         <div
-          id="carouselExampleSlidesOnly"
+          id="carouselSlides"
           class="carousel slide"
           data-bs-ride="carousel"
         >
@@ -162,7 +161,7 @@
                 <h3 class="mainTitleCar">ORGANIZZAZIONE</h3>
               </div>
               <div class="row mt-4">
-                <div class="carText">
+                <div class="col">
                   <p>
                     Il lavoro svolto è strettamente collegato a diversi enti,
                     tra cui la Fondazione ITS INCOM. Questa collaborazione
@@ -204,7 +203,7 @@
     <!-- Footer -->
     <div class="footer">
       <footer class="bg-dark text-light py-3">
-        <div class="container text-center">
+        <div class="container-fluid text-center">
           <p>&copy; 2024 ITSolutions. Tutti i diritti riservati.</p>
           <p>
             Indirizzo Azienda | Telefono: 123-456-7890 | Email: info@ITSolutions

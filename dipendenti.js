@@ -53,10 +53,10 @@ function displayData(data) {
       fetch("Dipendenti.json")
         .then((response) => response.json())
         .then((jsonData) => {
-          const dR = jsonData.find(
+          const x = jsonData.find(
             (d) => employee.nomeRiferimento === d.codiceFiscale
           );
-          const referenceName = dR ? `${dR.nome} ${dR.cognome}` : "N/A";
+          const referenceName = x ? `${x.nome} ${x.cognome}` : "N/A";
           const row = `
                         <tr>
                             <td>${employee.categoria}</td>

@@ -169,3 +169,81 @@ header {
 .imgLettera {
   width: 600px;
 }
+
+
+@media (min-width:601px) and  (max-width: 1024px) {
+
+  /* Riduci la dimensione del logo */
+  .logo {
+    width: 30%;
+  }
+
+    /* Riduci il margine del container del navbar */
+  #containerNavbar {
+    margin: 20px;
+  }
+  
+    /* Riduci il margine e la dimensione del testo del bottone nella navbar */
+  .bottoneNav {
+    margin-left: 50px;
+    font-size: 14px;
+  }
+
+ 
+  .demo-wrap1{
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .demo-content1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .effect-div1{
+    --b:3px;
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+  .carousel-container{
+    display: block;
+  }
+
+  .demo-wrapCar{
+    margin:0%;
+    height:fit-content;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+  
+
+  }
+
+  .mainTitle1 {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  /* riduci la dimensione del testo*/
+  #mainText1 {
+  font-size: 15px;
+  height: 80px; /* Modifica l'altezza in auto */
+  width: 100%;
+
+
+  }
+.container-fluid{
+  min-height: 1170px;
+}
+  .imgLettera{
+    width: 300px;
+   }
+  }
+
+
+
+

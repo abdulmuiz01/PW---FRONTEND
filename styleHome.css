@@ -92,9 +92,7 @@ header {
   overflow: hidden;
   position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 }
 
 .demo-bg1 {
@@ -107,12 +105,14 @@ header {
 
 .demo-content1 {
   position: relative;
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .effect-div1 {
-  --g: 4px; /* the gap */
-  --b: 5px; /* border thickness*/
+  --g: 4px; /* spaziatura*/
+  --b: 5px; /* spessore bordo*/
   --c: rgb(255, 255, 255);
   --font-size: 10px;
 
@@ -166,28 +166,16 @@ header {
 
 /* ===  DIVSTYLE2  === */
 
-.demo-wrap2 {
-  overflow: hidden;
-  position: relative;
+
+
+.demo-content2 {
   display: flex;
   justify-content: center;
 }
 
-.demo-bg2 {
-  opacity: 0.6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.demo-content2 {
-  position: relative;
-}
-
 .effect-div2 {
-  --g: 4px; /* the gap */
-  --b: 5px; /* border thickness*/
+  --g: 4px; /* spaziatura */
+  --b: 5px; /* grandezza bordo*/
   --c: rgb(47, 95, 140);
   --font-size: 10px;
 
@@ -226,15 +214,11 @@ header {
   height: 400px;
   width: 1100px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.col {
-  margin: 20px;
 }
 
 .mainTitle2 {
@@ -246,7 +230,6 @@ header {
 .carouselMain {
   display: flex;
   justify-content: flex-start; /* Allinea il contenitore a sinistra */
-  margin-right: 100px;
 }
 
 .carousel-container {
@@ -262,8 +245,8 @@ header {
 }
 
 .effect-divCar {
-  --g: 4px; /* the gap */
-  --b: 5px; /* border thickness*/
+  --g: 4px; /* spaziatura*/
+  --b: 5px; /* spessore bordo*/
   --c: rgb(47, 95, 140);
   --font-size: 10px;
 
@@ -314,10 +297,6 @@ header {
   margin-top: 25px;
 }
 
-.carText{
-  width: 700px;
-}
-
 /* ===  DIVSTYLE3  === */
 
 .demo-wrap3 {
@@ -340,11 +319,12 @@ header {
   margin-top: 10%;
   margin-left: 30%;
   height: 400px;
+  
 }
 
 .effect-div3 {
-  --g: 4px; /* the gap */
-  --b: 5px; /* border thickness*/
+  --g: 4px; /* spaziatura*/
+  --b: 5px; /* spessore bordo*/
   --c: rgb(255, 255, 255);
   --font-size: 10px;
 
@@ -374,8 +354,6 @@ header {
   transition: 0.25s;
 }
 
-
-
 /* === TEXT STYLE3 === */
 
 #mainText3 {
@@ -386,6 +364,8 @@ header {
   height: 350px;
   width: 1000px;
   margin-top: 20%;
+
+
 
   display: flex;
   flex-direction: column;
@@ -401,16 +381,211 @@ header {
 
 /* ===  RESPONSIVE  === */
 
-@media (max-width: 768px) {
-  /* tablet */
-  body {
+/* TABLET */
+
+@media (min-width:601px) and  (max-width: 1024px) {
+
+
+  /* Riduci la dimensione del logo */
+  .logo {
+    width: 30%;
+  }
+
+    /* Riduci il margine del container del navbar */
+  #containerNavbar {
+    margin: 20px;
+  }
+  
+    /* Riduci il margine e la dimensione del testo del bottone nella navbar */
+  .bottoneNav {
+    margin-left: 50px;
+    font-size: 14px;
+  }
+  
+
+  #imgBg{
+    height: 600px;
+  } 
+
+  .demo-wrap1{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  .demo-content1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .demo-wrap2{
+    height: 400px;
+  }
+
+
+  .demo-content2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .effect-div1,
+  .effect-div2,
+  .effect-div3,
+  .effect-divCar{
+    --b:3px;
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+  .carousel-container{
+    display: block;
+  }
+
+  .demo-wrapCar{
+    margin:0%;
+    height:fit-content;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+  
+
+  }
+
+  .demo-contentCar{
+    display: flex;
+    justify-content: center; 
+    height: fit-content;
+  }
+
+
+  #mainTextCar{
+    margin: 0 ;   
+  }
+
+  /* Riduci la dimensione dei titoli principale */
+  .mainTitle1,
+  .mainTitle2,
+  .mainTitle3,
+  .mainTitleCar {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  /* riduci la dimensione del testo*/
+  #mainText1,
+  #mainText2,
+  #mainText3,
+  #mainTextCar {
+  
     font-size: 15px;
+  height: auto; /* Modifica l'altezza in auto */
+
+  }
+
+  /* Riduci la larghezza del testo principale nei contenitori principali */
+  #mainText1,
+  #mainText2,
+  #mainText3 {
+    width: 80%;
+  }
+
+  #mainText1{
+    margin: 0;
+  }
+
+  /* Riduci la larghezza del testo principale nel carousel */
+  #mainTextCar {
+    width: 70%;
+  }
+
+  .demo-wrap3 {
+    height: max-content;
+    margin-top: 100px;
+  }
+  
+  .demo-bg3 {
+    filter: brightness(50%);
+    position: absolute;
+    width: 100%;
+  }
+  
+  .demo-content3 {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 30%;
+  
   }
 }
 
-@media (min-width: 769px) {
-  /* pc */
-  body {
+
+
+@media (max-width: 600px) {
+  /* Dispositivi mobili */
+
+  /* Riduci ulteriormente la dimensione del logo */
+  .logo {
+    width: 20%;
+  }
+
+  /* Riduci ulteriormente il margine del container del navbar */
+  #containerNavbar {
+    margin: 5px;
+  }
+
+  /* Riduci ulteriormente la dimensione del testo del bottone nella navbar */
+  .bottoneNav {
+    margin-left: 30px;
+    font-size: 12px;
+  }
+
+  /* Riduci ulteriormente la dimensione del testo principale */
+  .mainTitle1,
+  .mainTitle2,
+  .mainTitle3,
+  .mainTitleCar {
     font-size: 16px;
   }
+
+  /* Riduci ulteriormente il margine superiore del testo principale */
+  #mainText1,
+  #mainText2,
+  #mainText3,
+  #mainTextCar {
+    margin-top: 5%;
+  }
+
+  /* Riduci ulteriormente il margine delle colonne */
+  .col {
+    margin: 5px;
+  }
+
+  /* Riduci ulteriormente la larghezza dei contenitori principali */
+  .demo-wrap1,
+  .demo-wrap2,
+  .demo-wrap3 {
+    margin-top: 20px;
+  }
+
+  /* Riduci ulteriormente la dimensione delle immagini di sfondo */
+  .demo-bg1,
+  .demo-bg2,
+  .demo-bg3 {
+    height: 150px;
+  }
+
+  /* Riduci ulteriormente la larghezza del testo principale nei contenitori principali */
+  #mainText1,
+  #mainText2,
+  #mainText3 {
+    width: 90%;
+  }
+
+  /* Riduci ulteriormente la larghezza del testo principale nel carousel */
+  #mainTextCar {
+    width: 80%;
+  }
 }
+
+
